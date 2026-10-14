@@ -94,6 +94,18 @@ def check_skills(listed: list[str]) -> None:
             error(f"{rel}/SKILL.md: name '{name}' must be kebab-case")
         if not fm.get("description"):
             error(f"{rel}/SKILL.md: missing 'description'")
+        manual_claude = fm.get("disable-model-invocation", "").lower() == "true"
+        openai_yaml = skill_dir / "agents" / "openai.yaml"
+        manual_codex = openai_yaml.is_file() and re.search(
+            r"^\s*allow_implicit_invocation:\s*false\s*$",
+            openai_yaml.read_text(encoding="utf-8"),
+            re.MULTILINE,
+        ) is not None
+        if manual_claude != manual_codex:
+            error(
+                f"{rel}: manual-only mismatch - 'disable-model-invocation: true' in SKILL.md "
+                "and 'allow_implicit_invocation: false' in agents/openai.yaml must be set together"
+            )
         if skill_dir.name not in readme:
             error(f"README.md: skill '{skill_dir.name}' not mentioned")
 
