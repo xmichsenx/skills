@@ -1,0 +1,17 @@
+{
+  "name": "xmichsenx",
+  "owner": {
+    "name": "xmichsenx",
+    "url": "https://github.com/xmichsenx"
+  },
+  "description": "Personal agent skills for Claude Code and Codex.",
+  "plugins": [
+    {
+      "name": "xmichsenx-skills",
+      "source": "./",
+      "description": "Personal agent skills for backend engineering, automation and data processing.",
+      "category": "engineering",
+      "keywords": ["engineering", "skills"]
+    }
+  ]
+}

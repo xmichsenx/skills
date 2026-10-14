@@ -1,0 +1,12 @@
+{
+  "name": "xmichsenx-skills",
+  "version": "0.1.0",
+  "description": "Personal agent skills for backend engineering, automation and data processing.",
+  "author": {
+    "name": "xmichsenx",
+    "url": "https://github.com/xmichsenx"
+  },
+  "repository": "https://github.com/xmichsenx/skills",
+  "license": "MIT",
+  "keywords": ["engineering", "skills"]
+}
