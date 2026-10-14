@@ -21,3 +21,4 @@ This repo holds personal agent skills, shipped as a Claude Code plugin and usabl
 2. Add `"./skills/<category>/<skill-name>"` to the `skills` array in `.claude-plugin/plugin.json` (create the array if it doesn't exist yet).
 3. Add the skill to the list in `README.md`.
 4. Bump `version` in `.claude-plugin/plugin.json`.
+5. Run `python scripts/validate.py` and fix any errors.
