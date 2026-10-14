@@ -1,6 +1,7 @@
 ---
 name: setup-repo
 description: Interactively set up a GitHub repository with the gh CLI - create the repo and remote, add missing repo files, CI checks, main branch protection, labels, issue/PR templates, Dependabot and security settings. Audits the current state first and asks the user before changing anything. Use when the user wants to create, bootstrap, configure or harden a GitHub repo.
+disable-model-invocation: true
 ---
 
 # Set up a GitHub repository

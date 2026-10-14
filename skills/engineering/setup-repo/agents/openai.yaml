@@ -1,0 +1,5 @@
+interface:
+  display_name: "Setup Repo"
+  short_description: "Interactive GitHub repo setup with gh"
+policy:
+  allow_implicit_invocation: false

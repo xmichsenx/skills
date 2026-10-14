@@ -15,6 +15,20 @@ This repo holds personal agent skills, shipped as a Claude Code plugin and usabl
 - Keep `SKILL.md` short and focused on one job. Move long reference material into separate files and link to them.
 - Write instructions for an agent, not for a human reader: concrete steps, no filler.
 
+## Automatic vs manual invocation
+
+By default the agent may load a skill on its own when the `description` matches the task. Keep that for skills that are conventions or knowledge that should always apply (e.g. `commit-pr`).
+
+Make a skill **manual-only** when it runs a heavy, multi-step process or changes things outside the repo (GitHub settings, external services) - e.g. `setup-repo`. It should start only when the user invokes it by name. Set both:
+
+- Claude Code: `disable-model-invocation: true` in the `SKILL.md` frontmatter (invoked with `/skill-name`).
+- Codex: `agents/openai.yaml` next to `SKILL.md` (invoked with `$skill-name`):
+
+  ```yaml
+  policy:
+    allow_implicit_invocation: false
+  ```
+
 ## Adding a skill
 
 1. Create `skills/<category>/<skill-name>/SKILL.md`.
