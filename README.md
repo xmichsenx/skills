@@ -1,6 +1,6 @@
 # Skills
 
-My personal agent skills for **Claude Code** and **Codex** — small, focused workflows I use in day-to-day backend, automation and data work.
+My personal agent skills for **Claude Code** and **Codex** — small, focused workflows I use in day-to-day in my projects.
 
 ## Installation
 
