@@ -26,7 +26,9 @@ codex plugin add xmichsenx-skills@xmichsenx
 
 ## Skills
 
-_No skills yet — coming soon._
+| Skill | Description |
+| --- | --- |
+| [`commit-pr`](skills/engineering/commit-pr/SKILL.md) | Branch, commit, PR and squash-merge conventions (Conventional Commits). |
 
 ## License
 
