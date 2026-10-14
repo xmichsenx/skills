@@ -1,6 +1,6 @@
 {
   "name": "xmichsenx-skills",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Personal agent skills for backend engineering, automation and data processing.",
   "author": {
     "name": "xmichsenx",
@@ -13,6 +13,7 @@
     "skills"
   ],
   "skills": [
-    "./skills/engineering/commit-pr"
+    "./skills/engineering/commit-pr",
+    "./skills/engineering/setup-repo"
   ]
 }

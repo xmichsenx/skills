@@ -29,6 +29,7 @@ codex plugin add xmichsenx-skills@xmichsenx
 | Skill | Description |
 | --- | --- |
 | [`commit-pr`](skills/engineering/commit-pr/SKILL.md) | Branch, commit, PR and squash-merge conventions (Conventional Commits). |
+| [`setup-repo`](skills/engineering/setup-repo/SKILL.md) | Interactive GitHub repo setup with `gh`: repo, CI, branch protection, labels, templates, Dependabot and security. |
 
 ## License
 
